@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family:'Roboto', sans-serif;
   background-color: #f2f2f2;
 }
 
@@ -63,6 +65,35 @@ body {
 }
 .save-button:hover {
   background-color: green;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-button {
+  position: absolute;
+  top: 88px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 14px;
+  background-color: lightcoral;
+}
+.edit-button:hover {
+  background-color: green;
+  cursor: pointer;
+  color: white;
+}
+
+.delete-button {
+  position: absolute;
+  top: 150px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 5px;
+  background-color: lightskyblue;
+}
+.delete-button:hover {
+  background-color: green;
+  cursor: pointer;
   color: white;
 }
 
@@ -74,4 +105,49 @@ body {
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 500px;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box;  
+  border: 1px solid #4facfe;
+  border-radius: 4px;
+}
+
+button {
+  background: #00f2fe;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #191919;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.12), 0 2px 2px 1px rgba(0, 0, 0, 0.24);
+  transition: all 0.2 ease-in;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.12), 0 2px 3px 2px rgba(0, 0, 0, 0.24);
+}
+
+label {
+  margin-bottom: -8px;
+    text-align: left;
+    width: 500px;
+}
+
+.formTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
 }
